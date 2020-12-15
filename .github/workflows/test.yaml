@@ -13,7 +13,7 @@ jobs:
         with:
           oc_version: latest
       - name: Log in and set context
-        uses: redhat-actions/oc-login@update
+        uses: redhat-actions/oc-login@v1
         with:
           openshift_server_url: ${{ secrets.OPENSHIFT_SERVER }}
           openshift_token: ${{ secrets.OPENSHIFT_TOKEN }}
